@@ -8,7 +8,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 5%;
   padding-top: 2%;
   border-bottom: 1px solid black;
 }
@@ -25,7 +24,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .NavBar nav {
+    margin: 0%;
+  }
 }
 @media (max-width: 500px) {
   .NavBar nav {
@@ -35,6 +38,9 @@
 .NavBar nav a {
   text-decoration: none;
   color: black;
+}
+footer {
+  text-align: center;
 }
 .Container {
   width: 100%;
