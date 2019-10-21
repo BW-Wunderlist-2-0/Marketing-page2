@@ -12,6 +12,11 @@
   padding-top: 2%;
   border-bottom: 1px solid black;
 }
+@media (max-width: 500px) {
+  .NavBar {
+    flex-direction: column;
+  }
+}
 .NavBar h1 {
   margin: 2%;
 }
@@ -21,6 +26,11 @@
   flex-direction: row;
   justify-content: space-between;
   margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .NavBar nav {
+    flex-direction: column;
+  }
 }
 .NavBar nav a {
   text-decoration: none;

@@ -7,6 +7,10 @@
     padding-left: 5%;
     padding-top: 2%;
     border-bottom: 1px solid black;
+    @media @phone {
+        flex-direction: column;
+
+    }
     h1 {
         margin: 2%;
     }
@@ -16,6 +20,9 @@
         flex-direction: row;
         justify-content: space-between;
         margin-right: 10%;
+        @media @phone {
+            flex-direction: column;
+        }
         a {
             text-decoration: none;
             color: black;
