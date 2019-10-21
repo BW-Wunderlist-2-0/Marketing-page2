@@ -9,6 +9,7 @@
   align-items: center;
   width: 100%;
   padding-left: 5%;
+  padding-top: 2%;
   border-bottom: 1px solid black;
 }
 .NavBar h1 {
@@ -28,6 +29,9 @@
 .Container {
   width: 100%;
 }
+.Container .Marketing {
+  margin-top: 5%;
+}
 .Container .Marketing .Advertisement {
   width: 60%;
   display: flex;
@@ -38,9 +42,17 @@
 .Container .Marketing .Advertisement h2 {
   margin-bottom: 0%;
 }
+.Container .Marketing .Advertisement .image {
+  padding-top: 5%;
+  max-width: 100%;
+  max-height: 100%;
+}
 .Container .Marketing .Advertisement ol {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .Container .Marketing .Advertisement ol li {
-  margin: 5% 0%;
+  margin-top: 5%;
 }
