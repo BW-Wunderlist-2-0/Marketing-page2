@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+html {
+  font-size: 62.5%;
+  background-color: #ddd1c1;
+}
 .NavBar {
   display: flex;
   flex-direction: row;
@@ -19,25 +23,45 @@
 .NavBar h1 {
   margin: 2%;
 }
-.NavBar nav {
-  width: 40%;
+.NavBar .Nav {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 500px) {
-  .NavBar nav {
+  .NavBar .Nav {
     margin: 0%;
   }
 }
 @media (max-width: 500px) {
-  .NavBar nav {
+  .NavBar .Nav {
     flex-direction: column;
   }
 }
-.NavBar nav a {
+.NavBar .Nav #SignupButton {
+  background: #FFFFFF;
+  color: #2d3142;
+  height: 1.5rem;
+  width: 10rem;
+  border: 1px solid #2d3142;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+.NavBar .Nav #SignupButton:hover {
+  background: whitesmoke;
+  color: #47311e;
+  border: 2px solid #47311e;
+}
+.NavBar .Nav a {
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
 }
 footer {
   text-align: center;
@@ -48,6 +72,41 @@ footer {
 .Container .Marketing {
   margin-top: 5%;
 }
+.Container .Marketing .CallToAction {
+  display: flex;
+}
+.Container .Marketing .CallToAction .Prompt {
+  padding: 5%;
+  padding-right: 10%;
+}
+@media (max-width: 500px) {
+  .Container .Marketing .CallToAction .Prompt {
+    margin-left: 20%;
+  }
+}
+.Container .Marketing .CallToAction .Button {
+  width: 50%;
+  background-color: #2d3142;
+  padding: 3%;
+  color: #FFFFFF;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Container .Marketing .CallToAction .HoldImage {
+  width: 50%;
+  margin: auto 0%;
+}
+@media (max-width: 500px) {
+  .Container .Marketing .CallToAction .HoldImage {
+    display: none;
+  }
+}
+.Container .Marketing .CallToAction .HoldImage .image {
+  align-content: center;
+  max-width: 100%;
+}
 .Container .Marketing .Advertisement {
   width: 60%;
   display: flex;
@@ -56,12 +115,10 @@ footer {
   margin: 0 auto;
 }
 .Container .Marketing .Advertisement h2 {
-  margin-bottom: 0%;
+  margin: 0% auto;
 }
 .Container .Marketing .Advertisement .image {
-  padding-top: 5%;
   max-width: 100%;
-  max-height: 100%;
 }
 .Container .Marketing .Advertisement ol {
   margin: 0;
@@ -71,4 +128,55 @@ footer {
 }
 .Container .Marketing .Advertisement ol li {
   margin-top: 5%;
+}
+.Container .Marketing .Features {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.Container .Marketing .Features .Feature1 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .Container .Marketing .Features .Feature1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.Container .Marketing .Features .Feature1 .HoldImage {
+  width: 50%;
+}
+.Container .Marketing .Features .Feature1 .HoldImage .image {
+  max-width: 100%;
+}
+.Container .Marketing .Features .Feature2 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .Container .Marketing .Features .Feature2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.Container .Marketing .Features .Feature2 .HoldImage {
+  width: 50%;
+}
+.Container .Marketing .Features .Feature2 .HoldImage .image {
+  max-width: 100%;
+}
+.Container .Marketing .CallToAction2 {
+  width: 70%;
+  margin: 0% auto;
+  text-align: center;
+}
+.Container .Marketing .CallToAction2 .Button {
+  width: 50%;
+  background-color: #2d3142;
+  padding: 3%;
+  color: #FFFFFF;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.5rem;
+  text-align: center;
 }

@@ -15,11 +15,12 @@
         margin: 2%;
     }
     // off center
-    nav {
-        width: 40%;
+    .Nav {
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         // margin-right: 10%;
         @media @phone {
             margin: 0%;
@@ -28,9 +29,33 @@
         @media @phone {
             flex-direction: column;
         }
+
+        #SignupButton {
+            background: @white;
+            color: @darkblue;
+            height: 1.5rem;
+            width: 10rem;
+            border: 1px solid @darkblue;
+            border-radius: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+
+            text-align: center;
+            padding-top: 1%;
+            padding-bottom: 2%;
+            &:hover {
+                background: whitesmoke;
+                color: #47311e;
+                border: 2px solid #47311e;
+            }
+        }
         a {
             text-decoration: none;
             color: black;
+            // text-align: center;
+            font-size: 1.5rem;
+
+            
         }
         // align-content: center;
     }
