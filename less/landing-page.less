@@ -9,10 +9,11 @@
         margin-top: 5%;
         .CallToAction {
             display: flex;
-            // justify-content: center;
+            justify-content: space-between;
             .Prompt {
                 padding: 5%;
                 padding-right: 10%; 
+                margin: 2% auto;
                 @media @phone {
                     margin-left: 20%;
                 }
@@ -26,8 +27,8 @@
             }
             .HoldImage {
 
-                width: 50%;
-                margin: auto 0%;
+                // width: 50%;
+                margin: 2% auto;
                 @media @phone {
                     display: none;
 
@@ -36,7 +37,7 @@
                 .image {
                     align-content: center;
 
-                    .ImageSize();
+                    height: 300px;
                 }
     
             }
@@ -82,12 +83,14 @@
                 }
                 .HoldImage {
                     width: 50%;
-                    .Ad1{
-                        // margin: 0;
-                    }
+                    margin: 2% 0%;
+                    
                     .image {
                         .ImageSize();
                     }
+                }
+                .Ad1{
+                    font-size: 2rem;
                 }
             }
             .Feature2 {
@@ -100,13 +103,16 @@
                 }
                 .HoldImage {
                     width: 50%;
-                    .Ad2 {
-    
-                    }
+                    margin: 2% 0%;
+
+                    
                     .image {
                         .ImageSize();
                     }
                 }
+            }
+            .Ad2 {
+                font-size: 2rem;
             }
         }
         .CallToAction2 {
