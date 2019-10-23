@@ -84,6 +84,18 @@ footer {
 .Container {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .Container #NotInMobile {
+    display: none;
+  }
+  .Container .Marketing .Prompt {
+    padding: 20%;
+  }
+  .Container .Marketing .Prompt .CenterButton {
+    display: flex;
+    justify-content: center;
+  }
+}
 .Container .Marketing {
   margin-top: 5%;
 }
@@ -98,11 +110,6 @@ footer {
   padding-left: 10%;
   margin: 2% auto;
 }
-@media (max-width: 500px) {
-  .Container .Marketing .CallToAction .Prompt {
-    margin-left: 13%;
-  }
-}
 .Container .Marketing .CallToAction .Button {
   width: 50%;
   background-color: #2d3142;
@@ -114,13 +121,8 @@ footer {
   text-align: center;
 }
 .Container .Marketing .CallToAction .HoldImage {
-  width: 50%;
+  width: 80%;
   margin: auto 0%;
-}
-@media (max-width: 500px) {
-  .Container .Marketing .CallToAction .HoldImage {
-    display: none;
-  }
 }
 .Container .Marketing .CallToAction .HoldImage .image {
   max-width: 80%;
@@ -177,9 +179,9 @@ footer {
 .Container .Marketing .Features .Feature2 .HoldImage .image {
   max-width: 100%;
 }
-.Container .Marketing .Features .Ad2 {
+.Container .Marketing .Features .Feature2 .Ad2 {
   font-size: 2.5rem;
-  margin-right: 5%;
+  margin-left: 5%;
 }
 .Container .Marketing .CallToAction2 {
   width: 70%;
