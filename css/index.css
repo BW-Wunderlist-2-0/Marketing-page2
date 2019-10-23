@@ -6,6 +6,18 @@ html {
   font-size: 62.5%;
   background-color: #ddd1c1;
 }
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 3.6rem;
+}
 .NavBar {
   display: flex;
   flex-direction: row;
@@ -88,7 +100,7 @@ footer {
 }
 @media (max-width: 500px) {
   .Container .Marketing .CallToAction .Prompt {
-    margin-left: 20%;
+    margin-left: 13%;
   }
 }
 .Container .Marketing .CallToAction .Button {
@@ -111,33 +123,11 @@ footer {
   }
 }
 .Container .Marketing .CallToAction .HoldImage .image {
-  max-width: 100%;
+  max-width: 80%;
+  align-content: center;
 }
 .Container .Marketing .Advertisement {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-}
-.Container .Marketing .Advertisement h2 {
-  margin: 0% auto;
-}
-.Container .Marketing .Advertisement .image {
-  max-width: 100%;
-}
-.Container .Marketing .Advertisement ol {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.Container .Marketing .Advertisement ol li {
-  margin-top: 5%;
-}
-.Container .Marketing .Features {
-  margin-left: 10%;
-  margin-right: 10%;
+  text-align: center;
 }
 .Container .Marketing .Features .Feature1 {
   display: flex;
@@ -153,11 +143,17 @@ footer {
   width: 50%;
   margin: 2% 0%;
 }
+@media (max-width: 500px) {
+  .Container .Marketing .Features .Feature1 .HoldImage {
+    width: 100%;
+  }
+}
 .Container .Marketing .Features .Feature1 .HoldImage .image {
   max-width: 100%;
 }
 .Container .Marketing .Features .Feature1 .Ad1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-left: 5%;
 }
 .Container .Marketing .Features .Feature2 {
   display: flex;
@@ -173,11 +169,17 @@ footer {
   width: 50%;
   margin: 2% 0%;
 }
+@media (max-width: 500px) {
+  .Container .Marketing .Features .Feature2 .HoldImage {
+    width: 100%;
+  }
+}
 .Container .Marketing .Features .Feature2 .HoldImage .image {
   max-width: 100%;
 }
 .Container .Marketing .Features .Ad2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-right: 5%;
 }
 .Container .Marketing .CallToAction2 {
   width: 70%;
@@ -191,6 +193,18 @@ footer {
   color: #FFFFFF;
   border-radius: 10px;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .Container .Marketing .CallToAction2 .Button {
+    width: 90%;
+    background-color: #2d3142;
+    padding: 3%;
+    color: #FFFFFF;
+    border-radius: 10px;
+    outline: none;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
