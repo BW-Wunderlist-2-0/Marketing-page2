@@ -80,8 +80,10 @@ footer {
   justify-content: space-between;
 }
 .Container .Marketing .CallToAction .Prompt {
-  padding: 5%;
-  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 10%;
   margin: 2% auto;
 }
 @media (max-width: 500px) {
@@ -100,7 +102,8 @@ footer {
   text-align: center;
 }
 .Container .Marketing .CallToAction .HoldImage {
-  margin: 2% auto;
+  width: 50%;
+  margin: auto 0%;
 }
 @media (max-width: 500px) {
   .Container .Marketing .CallToAction .HoldImage {
@@ -108,8 +111,7 @@ footer {
   }
 }
 .Container .Marketing .CallToAction .HoldImage .image {
-  align-content: center;
-  height: 300px;
+  max-width: 100%;
 }
 .Container .Marketing .Advertisement {
   width: 60%;

@@ -10,9 +10,13 @@
         .CallToAction {
             display: flex;
             justify-content: space-between;
+            // height: 350px;
             .Prompt {
-                padding: 5%;
-                padding-right: 10%; 
+                // padding: 5%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                padding-right: 5%; 
+                padding-left: 10%;
                 margin: 2% auto;
                 @media @phone {
                     margin-left: 20%;
@@ -27,18 +31,33 @@
             }
             .HoldImage {
 
-                // width: 50%;
-                margin: 2% auto;
+                width: 50%;
+                // margin: 2% 0%;
+
+                    // width: 50%;
+                    margin: auto 0%;
+                
+                // margin: 2% auto;
                 @media @phone {
                     display: none;
 
                 }
                 // height:1000px;
                 .image {
-                    align-content: center;
-
-                    height: 300px;
+                    max-width:100%;
+                    // align-content: center;
+                    // max-height: 100%;
+                    // height: 300px;
                 }
+                // .HoldImage {
+                //     width: 50%;
+                //     margin: 2% 0%;
+
+                    
+                //     .image {
+                //         .ImageSize();
+                //     }
+                // }
     
             }
         }
