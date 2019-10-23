@@ -1,0 +1,159 @@
+.Container {
+    width: 100%;
+
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-content: center;
+    .Marketing {
+        margin-top: 5%;
+        .CallToAction {
+            display: flex;
+            // justify-content: center;
+            .Prompt {
+                padding: 5%;
+                padding-right: 10%; 
+                @media @phone {
+                    margin-left: 20%;
+                }
+                // width: 50%;
+                // height: 50%;
+            }
+            .Button {
+                // .button(@color, @font_color, @width, @font_size, @padding, @radius)
+                .button(@darkblue, @white, 50%, 1.5rem, 3%, 10px);
+
+            }
+            .HoldImage {
+
+                width: 50%;
+                margin: auto 0%;
+                @media @phone {
+                    display: none;
+
+                }
+                // height:1000px;
+                .image {
+                    align-content: center;
+
+                    .ImageSize();
+                }
+    
+            }
+        }
+        .Advertisement {
+            h2 {
+                margin: 0% auto;
+            }
+            .image {
+                .ImageSize();
+            }
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            ol {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                li {
+                    // margin: 5% 0%;
+                    margin-top: 5%;
+
+                }
+
+            }
+            // align-items: center;
+        
+        }
+        .Features {
+            margin-left: 10%;
+            margin-right: 10%;
+            .Feature1 {
+                display: flex;
+                justify-content: space-between;
+                @media @phone {
+                    // margin: 0% auto;
+                    flex-direction: column;
+                    align-items: center;
+                    // justify-content: baseline;
+                }
+                .HoldImage {
+                    width: 50%;
+                    .Ad1{
+                        // margin: 0;
+                    }
+                    .image {
+                        .ImageSize();
+                    }
+                }
+            }
+            .Feature2 {
+                display: flex;
+                justify-content: space-between;
+                @media @phone {
+
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                .HoldImage {
+                    width: 50%;
+                    .Ad2 {
+    
+                    }
+                    .image {
+                        .ImageSize();
+                    }
+                }
+            }
+        }
+        .CallToAction2 {
+            width: 70%;
+            margin: 0% auto;
+            text-align: center;
+            .Button {
+                // .button(@color, @font_color, @width, @font_size, @padding, @radius)
+                .button(@darkblue, @white, 50%, 1.5rem, 3%, 10px);
+            }
+        }
+        
+    // text-align: ;
+
+    }
+    // .Login {
+    //     // width: 50%;
+    //     margin: 20% 25%;
+    //      padding: 0% 10%;
+
+    //     border: 1px solid black;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     .Form {
+    //         width: 90%;
+    //         // display: flex;
+    //         // flex-direction: column;
+
+    //         // align-content: center;
+    //         .TextField {
+    //             border: 1px solid black;
+    //             // text-align: center;
+    //             // align-items: center;
+    //         }
+    //         .Warning {
+    //             padding: 0%;
+    //             margin: 0%;
+    //             font-size: 0.5rem;
+    //         }
+    //         // .button(@white, @black, 5%, 20px, 0%, 0)
+    //         .Button {
+    //             border: 1px solid black;
+    //             background-color: @white;
+    //         }
+    //     }
+        
+    // }
+}
