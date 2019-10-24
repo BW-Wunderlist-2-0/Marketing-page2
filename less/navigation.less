@@ -22,23 +22,24 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 2%;
         // margin-right: 10%;
         @media @phone {
             margin: 0%;
+
         }
 
         @media @phone {
             flex-direction: column;
         }
 
+        // .button(@color, @font_color, @width, @font_size, @padding, @radius)
         #SignupButton {
-            background: @white;
-            color: @darkblue;
-            height: 1.5rem;
-            width: 10rem;
+            .button(@white, @darkblue, 10rem, 2rem, 0%, 10px);
+            height: 2rem;
+
             border: 1px solid @darkblue;
-            border-radius: 10px;
-            font-size: 2rem;
+
             font-weight: bold;
 
             text-align: center;
@@ -53,12 +54,16 @@
         a {
             text-decoration: none;
             color: black;
-            // text-align: center;
+
             font-size: 2rem;
+            @media @phone {
+                // this also acounts for the border bottom under the last link
+                margin-bottom: 3%;
+
+            }
 
             
         }
-        // align-content: center;
     }
 }
 

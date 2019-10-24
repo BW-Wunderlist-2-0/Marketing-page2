@@ -42,6 +42,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2%;
 }
 @media (max-width: 500px) {
   .NavBar .Nav {
@@ -54,13 +55,15 @@ h1 {
   }
 }
 .NavBar .Nav #SignupButton {
-  background: #FFFFFF;
-  color: #2d3142;
-  height: 1.5rem;
   width: 10rem;
-  border: 1px solid #2d3142;
+  background-color: #FFFFFF;
+  padding: 0%;
+  color: #2d3142;
   border-radius: 10px;
+  outline: none;
   font-size: 2rem;
+  height: 2rem;
+  border: 1px solid #2d3142;
   font-weight: bold;
   text-align: center;
   padding-top: 1%;
@@ -75,6 +78,11 @@ h1 {
   text-decoration: none;
   color: black;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .NavBar .Nav a {
+    margin-bottom: 3%;
+  }
 }
 footer {
   width: 100%;
@@ -131,9 +139,25 @@ footer {
 .Container .Marketing .Advertisement {
   text-align: center;
 }
-.Container .Marketing .Features .Feature1 {
+.Container .Marketing .Features .Common {
   display: flex;
   justify-content: space-between;
+}
+.Container .Marketing .Features .Common .HoldImage {
+  width: 50%;
+  margin: 2% 0%;
+}
+@media (max-width: 500px) {
+  .Container .Marketing .Features .Common .HoldImage {
+    width: 100%;
+  }
+}
+.Container .Marketing .Features .Common .HoldImage .image {
+  max-width: 100%;
+}
+.Container .Marketing .Features .Common .Ad {
+  font-size: 3rem;
+  margin-left: 3%;
 }
 @media (max-width: 500px) {
   .Container .Marketing .Features .Feature1 {
@@ -141,47 +165,11 @@ footer {
     align-items: center;
   }
 }
-.Container .Marketing .Features .Feature1 .HoldImage {
-  width: 50%;
-  margin: 2% 0%;
-}
-@media (max-width: 500px) {
-  .Container .Marketing .Features .Feature1 .HoldImage {
-    width: 100%;
-  }
-}
-.Container .Marketing .Features .Feature1 .HoldImage .image {
-  max-width: 100%;
-}
-.Container .Marketing .Features .Feature1 .Ad1 {
-  font-size: 2.5rem;
-  margin-left: 5%;
-}
-.Container .Marketing .Features .Feature2 {
-  display: flex;
-  justify-content: space-between;
-}
 @media (max-width: 500px) {
   .Container .Marketing .Features .Feature2 {
     flex-direction: column-reverse;
     align-items: center;
   }
-}
-.Container .Marketing .Features .Feature2 .HoldImage {
-  width: 50%;
-  margin: 2% 0%;
-}
-@media (max-width: 500px) {
-  .Container .Marketing .Features .Feature2 .HoldImage {
-    width: 100%;
-  }
-}
-.Container .Marketing .Features .Feature2 .HoldImage .image {
-  max-width: 100%;
-}
-.Container .Marketing .Features .Feature2 .Ad2 {
-  font-size: 2.5rem;
-  margin-left: 5%;
 }
 .Container .Marketing .CallToAction2 {
   width: 70%;
