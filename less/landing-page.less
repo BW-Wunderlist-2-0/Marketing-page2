@@ -99,69 +99,40 @@
             // align-items: center;
         
         }
+        // pull out nesting
+        // put spaces for ios nav bar
+        // space after sign up from border
         .Features {
-
-            .Feature1 {
+            // 1 class for stuff they share
+            // 2 classes for the differences
+            .Common {
                 .FeatureDesktop();
+                .HoldImage {
+                    .HoldImageDesktop();
+                    @media @phone {
+                        .HoldImagePhone();
+                    }
+
+                    .image {
+                        .ImageSize();
+                    }
+                }
+                .Ad {
+                    .AdText();
+    
+                }
+            }
+            .Feature1 {
                 @media @phone {
                     .FeaturePhone(column);
                 }
-                .HoldImage {
-                    .HoldImageDesktop();
-                    @media @phone {
-                        .HoldImagePhone();
-                    }
-
-                    .image {
-                        .ImageSize();
-                    }
-                }
-                .Ad1{
-
-                    .AdText();
-
-                }
             }
             .Feature2 {
-                .FeatureDesktop();
                 @media @phone {
                     .FeaturePhone(column-reverse);
                 }
-                .HoldImage {
-                    .HoldImageDesktop();
-                    @media @phone {
-                        .HoldImagePhone();
-                    }
-
-                    .image {
-                        .ImageSize();
-                    }
-                }
-                .Ad2 {
-                    .AdText();
-    
-                }
             }
-            // .Feature3 {
-            //     .FeatureDesktop();
-            //     @media @phone {
-            //         .FeaturePhone(column);
-            //     }
-            //     .HoldImage {
-            //         .HoldImageDesktop();
-            //         @media @phone {
-            //             .HoldImagePhone();
-            //         }
-
-            //         .image {
-            //             .ImageSize();
-            //         }
-            //     }
-            //     .Ad2 {
-            //         .AdText();
-    
-            //     }
-            // }
+            
             
         }
         .CallToAction2 {
